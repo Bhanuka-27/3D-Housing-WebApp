@@ -128,7 +128,7 @@ function BlueprintUploader({ user }) { // Receive user prop
             // 2. URL-encode the JSON string
             const encodedBlueprintData = encodeURIComponent(blueprintDataString);
             // 3. Construct the URL for the standalone Three.js page
-            const threeJsPageURL = `http://127.0.0.1:5501/index.html?blueprintDataJson=${encodedBlueprintData}`; // Assuming index.html is in the same directory, adjust path if needed
+            const threeJsPageURL = `http://127.0.0.1:5500/Three.js/?blueprintDataJson=${encodedBlueprintData}`; // Assuming index.html is in the same directory, adjust path if needed
             // 4. Open a new tab/window with the URL
             window.open(threeJsPageURL, '_blank');
         } else {
